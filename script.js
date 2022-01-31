@@ -18,21 +18,21 @@ function playRound() {
         console.log("The computer has chosen: " + computerSelection);
         //compare the players selection with the CPU's selection & output the winner
         if (playerSelection == "rock") {
-            if (computerSelection == "rock") return "tie";
-            if (computerSelection == "paper") return "computer";
-            if (computerSelection == "scissors") return "player";
+            if (computerSelection == "rock") return "Rock vs rock! It's a tie!";
+            if (computerSelection == "paper") return "Rock loses to paper! You lose!";
+            if (computerSelection == "scissors") return "Rock beats scissors! You win!";
         }
 
         if (playerSelection == "paper") {
-            if (computerSelection == "rock") return "player";
-            if (computerSelection == "paper") return "tie";
-            if (computerSelection == "scissors") return "computer";
+            if (computerSelection == "rock") return "Paper beats rock! You win!";
+            if (computerSelection == "paper") return "Paper vs paper! It's a tie!";
+            if (computerSelection == "scissors") return "Paper loses to scissors! You lose!";
         }
 
         if (playerSelection == "scissors") {
-            if (computerSelection == "rock") return "computer";
-            if (computerSelection == "paper") return "player";
-            if (computerSelection == "scissors") return "tie";
+            if (computerSelection == "rock") return "Scissors lose to rock! You lose!";
+            if (computerSelection == "paper") return "Scissors beat paper! You win!";
+            if (computerSelection == "scissors") return "Scissors vs scissors! It's a tie!";
         }
     } else {
         console.log("Please enter a valid option: Rock / Paper / Scissors: ");
