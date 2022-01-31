@@ -79,5 +79,6 @@ function game() {
     }
 
     if (playerScore > computerScore) return "Congratulations! You won!";
+    else if (playerScore == computerScore) return "Huh... It's a tie!";
     else return "Unfortunately, you lost... Better luck next time!"
 }
